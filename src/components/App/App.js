@@ -8,7 +8,6 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <h1>Pulse On Music</h1>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="search" element={<SearchPage />} />
