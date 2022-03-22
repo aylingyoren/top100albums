@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import AlbumsList from "../AlbumsList/AlbumsList";
 import SearchBar from "../SearchBar/SearchBar";
 import "./SearchPage.css";
 
 function SearchPage() {
+  const [term, setTerm] = useState("");
   return (
     <div className="searchpage">
-      <h3>SearchPage</h3>
-      <SearchBar />
+      <SearchBar term={term} setTerm={setTerm} />
       <AlbumsList />
     </div>
   );
