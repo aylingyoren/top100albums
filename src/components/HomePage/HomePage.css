@@ -6,7 +6,7 @@
 .homepage {
   height: 100vh;
   z-index: 5;
-  padding: 20px 50px;
+  padding: 0 50px;
 }
 
 .homepage::before {
@@ -23,6 +23,7 @@
 }
 
 .homepage__title {
+  padding-top: 50px;
   font-size: 40px;
 }
 
