@@ -10,6 +10,14 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="search" element={<SearchPage />} />
+        <Route
+          path="*"
+          element={
+            <div style={{ padding: "1rem" }}>
+              <h1>Error 404: Not Found</h1>
+            </div>
+          }
+        />
       </Routes>
     </div>
   );
