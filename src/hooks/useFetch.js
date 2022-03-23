@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 export function useFetch(url) {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  async function getAlbums() {
+  const getAlbums = useCallback(async () => {
     setLoading(true);
     try {
       const response = await fetch(url);
@@ -19,11 +19,11 @@ export function useFetch(url) {
       setError(err?.message);
       throw new Error(err);
     }
-  }
+  }, [url]);
 
   useEffect(() => {
     getAlbums();
-  }, []);
+  }, [getAlbums]);
 
   return {
     data,
