@@ -12,9 +12,7 @@ export function useFavorites() {
 
   const removeFromFavorites = (item, id) => {
     item.isFav = false;
-    const newFavorites = favorites.filter(
-      (item) => item["im:name"].label !== id
-    );
+    const newFavorites = favorites.filter((el) => el["im:name"].label !== id);
     setFavorites(newFavorites);
     localStorage.setItem("favorites", JSON.stringify(newFavorites));
   };
