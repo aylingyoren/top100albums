@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { FavoritesContext } from "../../context/FavoritesContext";
 import { useFavorites } from "../../hooks/useFavorites";
@@ -10,6 +11,13 @@ import "./App.css";
 function App() {
   const { favorites, addToFavorites, removeFromFavorites, setFavorites } =
     useFavorites();
+
+  useEffect(() => {
+    const favorite = localStorage.getItem("favorites");
+    if (favorite) {
+      setFavorites(JSON.parse(favorite));
+    }
+  }, []);
 
   return (
     <div className="app">
