@@ -28,3 +28,20 @@
   font-weight: 600;
   height: 20px;
 }
+
+.albumcard__btn {
+  margin-top: 30px;
+  padding: 7px 13px;
+  outline: 2px solid #fa8072;
+  border-radius: 7px;
+  border: none;
+  background-color: #f8f1f1;
+  font-weight: 600;
+  color: #161616;
+  cursor: pointer;
+}
+
+.albumcard__btn:hover {
+  background-color: #fa8072;
+  color: #f8f1f1;
+}

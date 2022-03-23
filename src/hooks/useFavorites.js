@@ -3,24 +3,26 @@ import { useState } from "react";
 export function useFavorites() {
   const [favorites, setFavorites] = useState([]);
 
-  const addToFavorite = (item) => {
+  const addToFavorites = (item) => {
     item.isFav = true;
-    const newFavs = [...favorites, item];
-    setFavorites(newFavs);
-    localStorage.setItem("favorites", JSON.stringify(newFavs));
+    const newFavorites = [...favorites, item];
+    setFavorites(newFavorites);
+    localStorage.setItem("favorites", JSON.stringify(newFavorites));
   };
 
-  const removeFromFavorite = (item, id) => {
+  const removeFromFavorites = (item, id) => {
     item.isFav = false;
-    const newFavs = favorites.filter((item) => item["im:name"].label !== id);
-    setFavorites(newFavs);
-    localStorage.setItem("favorites", JSON.stringify(newFavs));
+    const newFavorites = favorites.filter(
+      (item) => item["im:name"].label !== id
+    );
+    setFavorites(newFavorites);
+    localStorage.setItem("favorites", JSON.stringify(newFavorites));
   };
 
   return {
     favorites,
-    addToFavorite,
-    removeFromFavorite,
+    addToFavorites,
+    removeFromFavorites,
     setFavorites,
   };
 }
