@@ -3,11 +3,17 @@
   flex-direction: column;
   justify-content: center;
   width: 170px;
+  margin-bottom: 30px;
 }
 
 .albumcard__img {
   width: 100%;
   height: auto;
+}
+
+.albumcard__title,
+.albumcard__singer {
+  margin: 10px 0;
 }
 
 .albumcard__title {
