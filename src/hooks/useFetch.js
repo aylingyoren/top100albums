@@ -9,7 +9,6 @@ export function useFetch(url) {
     setLoading(true);
     try {
       const response = await fetch(url);
-      console.log(response);
       const albumsList = await response.json();
       const album = albumsList?.feed?.entry;
       if (album) setData(album);

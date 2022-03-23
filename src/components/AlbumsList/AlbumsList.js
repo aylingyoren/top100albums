@@ -17,12 +17,7 @@ function AlbumsList({ term }) {
             album["im:name"].label.toLowerCase().startsWith(term.toLowerCase())
         )
         .map((album, i) => (
-          <AlbumCard
-            key={`album-item-${i}`}
-            title={album["im:name"].label}
-            img={album["im:image"][2].label}
-            singer={album["im:artist"].label}
-          />
+          <AlbumCard key={`album-item-${i}`} album={album} />
         ))}
     </div>
   );
