@@ -17,7 +17,7 @@ function App() {
     if (favorite) {
       setFavorites(JSON.parse(favorite));
     }
-  }, []);
+  }, [setFavorites]);
 
   return (
     <div className="app">

@@ -1,0 +1,16 @@
+.favoritespage {
+  padding: 50px;
+}
+
+.favoritespage__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  gap: 40px;
+}
+
+.favoritespage__title {
+  font-size: 40px;
+}
