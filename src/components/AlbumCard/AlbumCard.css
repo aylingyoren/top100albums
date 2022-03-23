@@ -7,6 +7,17 @@
   margin-bottom: 30px;
 }
 
+.albumcard__img_group {
+  position: relative;
+}
+
+.albumcard__heart {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #f35442;
+}
+
 .albumcard__img {
   width: 100%;
   height: auto;
