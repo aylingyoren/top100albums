@@ -10,7 +10,7 @@
   padding: 10px 13px;
   width: 300px;
   border: 0;
-  border-bottom: 2px solid #fa8072;
+  border-bottom: 2px solid var(--salmon);
 }
 
 .searchbar__input:focus {

@@ -1,5 +1,5 @@
 .searchpage {
-  padding: 50px;
+  padding: var(--padding-large);
 }
 
 @media (min-width: 320) and (max-width: 639px) {

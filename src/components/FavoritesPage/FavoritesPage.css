@@ -1,5 +1,5 @@
 .favoritespage {
-  padding: 50px;
+  padding: var(--padding-large);
 }
 
 .favoritespage__container {

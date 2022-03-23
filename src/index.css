@@ -1,3 +1,9 @@
+:root {
+  --salmon: #fa8072;
+  --egg-shell: #e6dede;
+  --padding-large: 50px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

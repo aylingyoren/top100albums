@@ -5,8 +5,8 @@
 
 .homepage {
   z-index: 5;
-  padding: 0 50px;
-  height: calc(100vh - 70px);
+  padding: var(--padding-large);
+  flex-grow: 1;
 }
 
 .homepage::before {
@@ -23,7 +23,7 @@
 }
 
 .homepage__title {
-  padding-top: 50px;
+  padding-top: var(--padding-large);
   font-size: 40px;
 }
 

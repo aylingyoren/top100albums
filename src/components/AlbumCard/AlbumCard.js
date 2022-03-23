@@ -4,9 +4,10 @@ import { BsSuitHeart, BsSuitHeartFill } from "react-icons/bs";
 import "./AlbumCard.css";
 
 const AlbumCard = ({ album }) => {
-  const albumTitle = album["im:name"].label;
-  const albumImageSrc = album["im:image"][2].label;
-  const albumSinger = album["im:artist"].label;
+  const albumTitle = album["im:name"]?.label;
+  const albumImageSrc = album["im:image"][2]?.label;
+  const albumSinger = album["im:artist"]?.label;
+  const albumId = album?.id?.attributes["im:id"];
 
   const [favorites, addToFavorites, removeFromFavorites] =
     useContext(FavoritesContext);
@@ -18,12 +19,13 @@ const AlbumCard = ({ album }) => {
         <div
           className="albumcard__heart"
           onClick={() =>
-            favorites?.find((el) => el["im:name"].label === albumTitle)?.isFav
-              ? removeFromFavorites(album, albumTitle)
+            favorites?.find((el) => el?.id?.attributes["im:id"] === albumId)
+              ?.isFav
+              ? removeFromFavorites(album, albumId)
               : addToFavorites(album)
           }
         >
-          {favorites.find((el) => el["im:name"].label === albumTitle) ? (
+          {favorites.find((el) => el?.id?.attributes["im:id"] === albumId) ? (
             <BsSuitHeartFill size="40px" />
           ) : (
             <BsSuitHeart size="40px" />

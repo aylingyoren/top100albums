@@ -1,11 +1,10 @@
 .navbar {
   padding-left: 50px;
-  height: 70px;
   display: flex;
   justify-content: flex-start;
   gap: 50px;
   align-items: center;
-  background-color: #fa8072;
+  background-color: var(--salmon);
   font-size: 20px;
   font-weight: 500;
 }
@@ -16,21 +15,21 @@
 }
 
 .navbar__link-active {
-  border-bottom: solid 2px #e6dede;
-  color: #e6dede;
+  border-bottom: solid 2px var(--egg-shell);
+  color: var(--egg-shell);
 }
 
 .navbar__link:hover {
-  color: #e6dede;
+  color: var(--egg-shell);
 }
 
 .navbar__logo {
-  max-width: 50px;
+  max-width: 3rem;
   margin-right: 50px;
 }
 
 .navbar__logo:hover {
-  outline: 1px solid #e6dede;
+  outline: 1px solid var(--egg-shell);
 }
 
 @media (min-width: 320px) and (max-width: 639px) {

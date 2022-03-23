@@ -10,9 +10,7 @@ function AlbumsList({ term }) {
     "https://itunes.apple.com/us/rss/topalbums/limit=100/json"
   );
 
-  if (loading) {
-    return <Spinner />;
-  }
+  if (loading) return <Spinner />;
 
   if (error) return <ErrorPage text={error} />;
 
