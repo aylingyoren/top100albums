@@ -8,7 +8,7 @@ function SearchPage() {
   return (
     <div className="searchpage">
       <SearchBar term={term} setTerm={setTerm} />
-      <AlbumsList />
+      <AlbumsList term={term} />
     </div>
   );
 }

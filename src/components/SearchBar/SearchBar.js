@@ -10,7 +10,7 @@ function SearchBar({ term, setTerm }) {
       <input
         className="searchbar__input"
         value={term}
-        placeholder="Search Albums..."
+        placeholder="Search albums by title..."
         onChange={(e) => setTerm(e.target.value)}
       />
       {term.length === 0 ? (
