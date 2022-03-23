@@ -12,8 +12,11 @@ function NavBar() {
       <Link to="/">
         <div className="navbar__link">Home</div>
       </Link>
-      <Link to="search">
+      <Link to="topalbums">
         <div className="navbar__link">Search</div>
+      </Link>
+      <Link to="favorites">
+        <div className="navbar__link">Favorites</div>
       </Link>
     </div>
   );

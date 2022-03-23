@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { FavoritesContext } from "../../context/FavoritesContext";
 import { useFavorites } from "../../hooks/useFavorites";
+import FavoritesPage from "../FavoritesPage";
 import HomePage from "../HomePage/HomePage";
 import NavBar from "../NavBar/NavBar";
 import SearchPage from "../SearchPage/SearchPage";
@@ -18,7 +19,8 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="search" element={<SearchPage />} />
+          <Route path="topalbums" element={<SearchPage />} />
+          <Route path="favorites" element={<FavoritesPage />} />
           <Route
             path="*"
             element={
