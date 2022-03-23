@@ -33,7 +33,7 @@
 }
 
 .homepage__text {
-  width: 700px;
+  max-width: 700px;
   line-height: 26px;
 }
 
@@ -61,4 +61,48 @@
   top: 50px;
   right: 50px;
   width: 500px;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .homepage__factoids {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 639px) {
+  .homepage {
+    padding: 20px 10px;
+  }
+
+  .homepage__text {
+    min-width: 300px;
+  }
+
+  .homepage__factoids {
+    gap: 17px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 549px) {
+  .homepage__factoids {
+    gap: 135px;
+  }
+
+  .homepage__factoid {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 639px) {
+  .homepage__factoids {
+    gap: 135px;
+  }
+}
+@media (min-width: 640) and (max-width: 769px) {
+  .homepage__factoids {
+    gap: 20px;
+  }
 }

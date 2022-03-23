@@ -10,15 +10,51 @@
   font-weight: 500;
 }
 
+.navbar__link,
+.navbar__link-active {
+  padding: 7px 10px;
+}
+
+.navbar__link-active {
+  border-bottom: solid 2px #e6dede;
+  color: #e6dede;
+}
+
 .navbar__link:hover {
   color: #e6dede;
 }
 
 .navbar__logo {
-  width: 50px;
+  max-width: 50px;
   margin-right: 50px;
 }
 
 .navbar__logo:hover {
   outline: 1px solid #e6dede;
+}
+
+@media (min-width: 320px) and (max-width: 639px) {
+  .navbar {
+    padding: 7px;
+    max-height: 40px;
+    gap: 10px;
+  }
+
+  .navbar__link,
+  .navbar__link-active {
+    font-size: 15px;
+    padding: 7px;
+  }
+
+  .navbar__logo {
+    min-width: 20px;
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 640) and (max-width: 769px) {
+  .navbar__link,
+  .navbar__link-active {
+    font-size: 14px;
+  }
 }
