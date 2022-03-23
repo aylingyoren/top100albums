@@ -1,0 +1,24 @@
+.albumcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 170px;
+}
+
+.albumcard__img {
+  width: 100%;
+  height: auto;
+}
+
+.albumcard__title {
+  font-weight: 500;
+  height: 35px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.albumcard__singer {
+  color: #bebebe;
+  font-weight: 600;
+  height: 20px;
+}
