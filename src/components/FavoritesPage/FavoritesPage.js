@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { FavoritesContext } from "../../context/FavoritesContext";
-import AlbumCard from "../AlbumCard/AlbumCard";
+import AlbumCard from "../AlbumCard";
 import "./FavoritesPage.css";
 
 function FavoritesPage() {

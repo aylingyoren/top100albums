@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import AlbumsList from "../AlbumsList/AlbumsList";
-import SearchBar from "../SearchBar/SearchBar";
+import AlbumsList from "../AlbumsList";
+import SearchBar from "../SearchBar";
 import "./SearchPage.css";
 
 function SearchPage() {

@@ -2,10 +2,11 @@ import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { FavoritesContext } from "../../context/FavoritesContext";
 import { useFavorites } from "../../hooks/useFavorites";
+import ErrorPage from "../ErrorPage";
 import FavoritesPage from "../FavoritesPage";
-import HomePage from "../HomePage/HomePage";
-import NavBar from "../NavBar/NavBar";
-import SearchPage from "../SearchPage/SearchPage";
+import HomePage from "../HomePage";
+import NavBar from "../NavBar";
+import SearchPage from "../SearchPage";
 import "./App.css";
 
 function App() {
@@ -29,14 +30,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="topalbums" element={<SearchPage />} />
           <Route path="favorites" element={<FavoritesPage />} />
-          <Route
-            path="*"
-            element={
-              <div style={{ padding: "1rem" }}>
-                <h1>Error 404: Not Found</h1>
-              </div>
-            }
-          />
+          <Route path="*" element={<ErrorPage text="Error 404: Not Found" />} />
         </Routes>
       </FavoritesContext.Provider>
     </div>
