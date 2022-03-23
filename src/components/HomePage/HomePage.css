@@ -4,9 +4,9 @@
 }
 
 .homepage {
-  height: 100vh;
   z-index: 5;
   padding: 0 50px;
+  height: calc(100vh - 70px);
 }
 
 .homepage::before {
